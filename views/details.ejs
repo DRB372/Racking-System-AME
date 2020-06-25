@@ -1,0 +1,124 @@
+<%- include('./includes/header') %>
+</head>
+  <!-- Header part end-->
+
+  <!-- banner part start-->
+  <body>
+    <%- include('./includes/navigation') %>
+    <!-- Header part end-->
+
+    <!--================Home Banner Area =================-->
+    <!-- breadcrumb start-->
+    <section class="breadcrumb" style="background-color:#ECFDFF;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item" style="text-align: center;">
+                           <h1>Al-Mahmood Engineering</h1>
+                            <h2>Shop Single</h2>
+                            <p>Home <span>-</span> <%= detail.category.replace(/([a-z])([A-Z])/g, '$1 $2')%></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!--================Category Product Area =================-->
+    <section class="cat_product_area section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left_sidebar_area">
+                        <aside class="left_widgets p_filter_widgets">
+                            <div class="l_w_title">
+                                <h3>Browse Categories</h3>
+                            </div>
+                            <div class="widgets_inner">
+                                <ul class="list">
+                                    <li>
+                                        <a href="/GondolaRack">Gondola Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/CantileverRack">Cantilever Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/MobileRack">Mobile Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/HeavyDutyRack">Heavy Duty Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/AngleRack">Angle Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/PharmaRack">Pharma Rocks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/GlassShowcase">Glass Showcase</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/TraysandTrolleys">Trays and Trolleys</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/GarmentsRacks">Garments Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/MobileAccessoryRacks">Mobile Accessory Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/CrockerRacks">Crocker Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                    <li>
+                                        <a href="/FileRacks">File Racks</a>
+                                        <span>(250)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center;">
+                            <div>
+                                <h3><%=detail.category.replace(/([a-z])([A-Z])/g, '$1 $2') %></h3> 
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        
+                        <div class="col-lg-12">
+                            <div class="">
+                            <img style="display: block;margin-left: auto;margin-right: auto;" src="/<%= detail.image.slice(7) %>" alt="<%= detail.category %>" height="500px" >
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Category Product Area =================-->
+
+    <!-- product_list part start-->
+    <%- include('./includes/footer') %>

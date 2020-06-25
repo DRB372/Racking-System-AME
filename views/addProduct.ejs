@@ -1,0 +1,32 @@
+   <link rel="stylesheet" href="/stylesheets/product.css">
+    <link rel="stylesheet" href="/stylesheets/forms.css">
+</head>
+
+<body>
+      <div class="container">
+        <main>
+            <form class="product-form" action="/add" method="POST" enctype="multipart/form-data">
+                <!-- <div class="form-control">
+                    <label for="category">Category </label>
+                    <input type="text" name="category" id="category" value="">
+                </div> -->
+                <div class="form-control">
+                    <label for="category">Choose Category </label>
+                    <select  name="category">
+                        <option value="not-specified">Choose option</option>
+                        <option value="File Racks">File Racks</option>
+                        <option value="staff">Technical Staff</option>
+                        <option value="security">Security</option>
+                        <option value="manager">Manager</option>
+                      </select>
+                </div>
+                
+                <div class="form-control">
+                    <label for="image">Image </label>
+                    <input type="file" name="image" id="image" value="">
+                </div>  
+                <button class="btn" type="submit">Add Product</button>
+            </form>
+        </main>
+    </div>
+  

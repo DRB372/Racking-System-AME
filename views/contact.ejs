@@ -1,0 +1,160 @@
+<%- include('./includes/header') %>
+</head>
+  <!-- Header part end-->
+
+  <!-- banner part start-->
+  <body>
+    <%- include('./includes/navigation') %>
+    <!-- Header part end-->
+
+    <!--================Home Banner Area =================-->
+    <!-- breadcrumb start-->
+    <section class="breadcrumb" style="background-color:#ECFDFF;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item" style="text-align: center;">
+                           <h1>Al-Mahmood Engineering</h1>
+                            <h2>Contact Us</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!--================Category Product Area =================-->
+    <section class="contact-section padding_top">
+        <div class="container">
+          <div class="d-none d-sm-block mb-5 pb-4">
+            <div id="map" style="height: 480px;"></div>
+            <script>
+              function initMap() {
+                var uluru = {
+                  lat: -25.363,
+                  lng: 131.044
+                };
+                var grayStyles = [{
+                    featureType: "all",
+                    stylers: [{
+                        saturation: -90
+                      },
+                      {
+                        lightness: 50
+                      }
+                    ]
+                  },
+                  {
+                    elementType: 'labels.text.fill',
+                    stylers: [{
+                      color: '#ccdee9'
+                    }]
+                  }
+                ];
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {
+                    lat: -31.197,
+                    lng: 150.744
+                  },
+                  zoom: 9,
+                  styles: grayStyles,
+                  scrollwheel: false
+                });
+              }
+            </script>
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+            </script>
+    
+          </div>
+    
+    
+          <div class="row">
+            <div class="col-12">
+              <h2 class="contact-title">Get in Touch</h2>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="media contact-info">
+                <span class="contact-info__icon"><i class="ti-home"></i></span>
+                <div class="media-body">
+                  <h3>Locate Us</h3>
+                  <p>Near Punjab University Ali Pur Chowk, Gujranwala</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media contact-info">
+                  <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                  <div class="media-body">
+                    <h3>Mobile</h3>
+                    <p>+92 321 6491904</p>
+                  </div>
+                </div>
+              </div><div class="col-lg-4">
+                <div class="media contact-info">
+                  <span class="contact-info__icon"><i class="ti-email"></i></span>
+                  <div class="media-body">
+                    <h3>Email</h3>
+                    <p>info@amepk.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <div class="product_list best_seller section_padding container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="section_tittle text-center">
+              <h2>AME TEAM </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-12">
+            <div class="best_product_slider owl-carousel">
+              
+              <div class="single_product_item">
+                <img src="/images/avatar.png" alt="" height="200px" width="250px"/>
+    
+                <div class="single_product_text">
+                  <h4>CEO </h4>
+                  <h5>Atta ur Rehman</h5>
+                </div>
+              </div>
+              <div class="single_product_item">
+                <img src="/images/avatar.png" alt="" height="200px" width="250px"/>
+    
+                <div class="single_product_text">
+                  <h4>Director Research & Development</h4>
+                  <h5>Zia ur Rehman</h5>
+                </div>
+              </div>
+              <div class="single_product_item">
+                <img src="/images/avatar.png" alt="" height="200px" width="250px"/>
+    
+                <div class="single_product_text">
+                  <h4>Director Operations</h4>
+                    <h5>Muhammad Hamza</h5>
+                </div>
+              </div>
+              <div class="single_product_item">
+                <img src="/images/avatar.png" alt="" height="200px" width="250px"/>
+    
+                <div class="single_product_text">
+                  <h4>Director Business Development</h4>
+                    <h5>Muhammad Ali</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%- include('./includes/footer') %>
